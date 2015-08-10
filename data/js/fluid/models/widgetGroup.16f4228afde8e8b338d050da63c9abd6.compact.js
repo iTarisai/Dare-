@@ -1,0 +1,1 @@
+if(!fluid.models){fluid.models={}}fluid.models.WidgetGroup=fluid.Model.extend({initialize:function(a,b){},parse:function(b,a){return b}});fluid.WidgetGroups=fluid.Collection.extend({model:fluid.models.WidgetGroup,initialize:function(b,a){}});

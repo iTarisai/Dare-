@@ -1,0 +1,1 @@
+var model=require("../fluid.model");if(!fluid.models){fluid.models={}}fluid.models.CustomWidgets=fluid.Model.extend({attrBlackList:[],initialize:function(a,b){}});fluid.CustomWidgets=fluid.Collection.extend({model:fluid.models.CustomWidgets,initialize:function(b,a){this.accountModel=a.accountModel}});module.exports=fluid.CustomWidgets;

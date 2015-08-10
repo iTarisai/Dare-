@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dare!</title>
+
+
+<link rel="stylesheet" href="./css/concat-1preview.72892445a026d6c2cc0861e07f8f1419.compact.css" type="text/css" media="all">
+
+<meta id="metaViewport" name="viewport"	content="width=device-width, height=device-height, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=0">
+	
+
+<!-- target-densitydpi=device-dpi,  -->
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<!--<script id="default-branding-links" type="x-jquery-temp">-->
+<script id="default-branding-links" type="text/x-jquery-tmpl">
+	<!-- iPad (Retina) -->
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144.png" />
+	<!-- iPad --> 
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-144.png" />
+	<!-- iPhone (Retina) --> 
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png" />
+	<!-- Older iPhones --> 
+	<link rel="apple-touch-icon" href="img/apple-touch-icon-114.png" />
+
+	<!-- iPhone -->
+	<link rel="apple-touch-startup-image" href="img/fluidLoading320x460.png"
+		media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+	<!-- iPhone (Retina) -->
+	<link rel="apple-touch-startup-image" href="img/fluidLoading640x920.png"
+		media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<!-- iPhone 5 -->
+	<link rel="apple-touch-startup-image" href="img/fluidLoading640x1096.png"
+		media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<!-- iPad (portrait) -->
+	<link rel="apple-touch-startup-image" href="img/fluidLoading768x1004.png"
+		media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+	<!-- iPad (landscape) -->
+	<link rel="apple-touch-startup-image" href="img/fluidLoading1024x748.png"
+		media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+	<!-- iPad (Retina, portrait) -->
+	<link rel="apple-touch-startup-image" href="img/fluidLoading1536x2008.png"
+		media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+	<!-- iPad (Retina, landscape) -->
+	<link rel="apple-touch-startup-image" href="img/fluidLoading2048x1496.png"
+		media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+</script>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+
+
+	
+
+
+<script id="tmplWidget2" type="text/x-jquery-tmpl">
+<div id="{{if isLibaryWidget}}${id}{{else isHelperWidget}}helper-${id}{{/if}}" class="pageWidget{{if isRootwidget}} rootWidget{{/if}}{{if isSegmentRoot}} segmentRootWidget{{/if}}{{if wg}} replacableWidget{{/if}}{{if isBackgroundWidget}} backgroundWidget{{/if}}{{if dm}} hotspotWidget{{/if}}" 
+	data-lockto="${lockTo}" 
+	{{if segment}}data-segment="${segment}"{{/if}} 
+	{{if segmentRoot}}data-segment-root="${segmentRoot}"{{/if}} 
+	//{{if isStatic}}data-position="fixed"{{/if}} 
+	style="top:${absTLWH[0]}px;left:${absTLWH[1]}px;width:${absTLWH[2]}px;height:${absTLWH[3]}px;">
+	{{if includeCanvasOrImage}}
+		{{if useCanvas}}<canvas width="100%" height="100%" style="width:100%;height:100%"></canvas>
+		{{else}}<img width="100%" height="100%" style="width:100%;height:100%;">{{/if}}
+	{{/if}}
+	{{if isText}}<div class="widgetText" style="${ts}{{if addWH}};width:100%;height:100%;white-space:pre-wrap;{{/if}}">${tc}</div>{{/if}}
+</div> 
+</script>
+
+		
+
+	<!--  style="width:${width}px;height:${height}px" -->
+	<script id="tmplPreviewPage" type="text/x-jquery-tmpl">
+		<div data-role="page" id="${pageId}" class="page previewPage" style="background-color:${bgColor}; height: 100%;">
+			<!--div data-role="header" data-position="fixed" class="fixedWidgetHolderBack"></div-->
+			<div data-role="content" class="widgetHolder" style="width:${width}px;height:${height}px;{{if top}}top:${top}px;{{/if}}{{if left}}left:${left}px;{{/if}}">
+				<div class="flowText" style="width:${width}px;height:${height}px"><!-- Manages the w/h of the scroller.--></div>
+						
+			</div>
+			<div data-role="header" data-position="fixed" class="fixedWidgetHolderFront"></div>
+		</div>
+	</script>
+
+	<!-- PREVIEW LINK VERSION: error screen seen when accessing the main editor page -->	
+	<script id="tmplInvalid" type="text/x-jquery-tmpl" >
+	<div style="width:350px;height:220px;position:absolute;left:35%;top:10%;">
+		<span style="color:#02a2c9;font:bold 14px/18px helvetica;">Your browser is not currently supported</span><br>
+		<span style="color:#999;font:12px/14px helvetica;">Sorry, we&apos;re just too little to support this browser at this time but we will as soon as we can. In the meantime, you can try Fluid UI with another browser.</span><br><br><br>
+
+		<a href="http://www.google.com/chrome" title="Download Google Chrome" alt="Download Google Chrome" target="_blank" style="color:#999;font:12px/12px helvetica;">
+			<img alt="Chrome" src="img/CHROME.png" width="200" height="53" />
+			<br>
+			http://www.google.com/chrome
+		</a>
+
+		<br><br>
+
+		<a href="http://www.firefox.com" title="Download Mozilla Firefox" alt="Download Mozilla Firefox" target="_blank" style="color:#999;font:12px/12px helvetica;">
+			<img alt="Firefox" src="img/firefox.png" width="151" height="145" />
+			<br>
+			http://www.firefox.com
+		</a>
+
+		<br><br>
+
+		<a href="http://www.apple.com/safari" title="Download Apple Safari" alt="Download Apple Safari" target="_blank" style="color:#999;font:12px/12px helvetica;">
+			<img src="img/SAFARI.png" alt="Safari" width="50" height="50" />
+			<br>
+			http://www.apple.com/safari</a>
+		</a>
+		<br>
+	</div>
+	</script>
+
+	<script id="projectInactive" type="text/x-jquery-tmpl" >
+	<div class="sleeper">
+		<span class="sleeper-z sleeper-z-1">Z</span>
+		<span class="sleeper-z sleeper-z-2">Z</span>
+		<span class="sleeper-z sleeper-z-3">Z</span>
+		<img src="img/inactive-project.svg">
+		 <div class="sleeper-div">
+		 This project is not active now.
+		 </div>
+		 <div class="sleeper-div">
+		 Please contact the owner.
+		 </div>
+	</div>
+	</script>
+
+
+
+
+
+<script id="uploadTabsTpl" type="text/x-underscore">
+<section class="setHeader">
+	<header>
+		<h2>Uploads</h2>
+		<h6>Hide</h6>
+	</header>
+	<ol id="uploadTabs">
+		<li class="tabTrigger {{#openAllUploads}}active{{/openAllUploads}} allUploads">
+			<div class="tab-button">
+				<svg class="svg-icon whenActive" viewBox="0 0 100 100"> <use xlink:href="#icon-all-uploads-blue"> </use> </svg>
+				<svg class="svg-icon whenInactive" viewBox="0 0 100 100"> <use xlink:href="#icon-all-uploads-gray"> </use> </svg>
+				<span>All uploads</span>
+			</div>
+			<ul data-groupName="Uploads" class="childContainer">
+			{{#allUploads}}
+				{{& allUploads}}
+			{{/allUploads}}
+			</ul>
+		</li>
+		<li class="tabTrigger perProjects {{^openAllUploads}}active{{/openAllUploads}}">
+			<div class="tab-button">
+				<svg class="svg-icon whenActive" viewBox="0 0 100 100"> <use xlink:href="#icon-view-by-project-blue"> </use> </svg>
+				<svg class="svg-icon whenInactive" viewBox="0 0 100 100"> <use xlink:href="#icon-view-by-project-gray"> </use> </svg>
+				<span>View by project</span>
+			</div>
+			<ul id="perProjectGroupContainer" class="childContainer">
+				<li class="uploadSpacer"></li>
+			</ul>
+		</li>
+	</ol>
+</section>
+</script>
+<script id="uploadTabsProject" type="text/x-underscore">
+	<li id="project-{{id}}" class="projectTab{{#empty}} empty{{/empty}}{{#currentProject}} current{{/currentProject}}{{#activeProject}} active{{/activeProject}}{{#notInAny}} notInAnyProject{{/notInAny}}">
+		<div class="tab-button">
+			<span class="tab-count">{{count}}</span>
+			<span class="tab-name">{{name}}</span>
+
+			{{! these are shown for normal project tab }}
+			{{^notInAny}}
+			<svg class="svg-icon whenActive" viewBox="0 0 100 100"> <use xlink:href="#icon-project-open-blue"> </use> </svg>
+			<svg class="svg-icon whenInactive" viewBox="0 0 100 100"> <use xlink:href="#icon-project-closed-gray"> </use> </svg>
+			{{/notInAny}}
+			
+			{{! these are shown for not-in-any-project tab }}
+			{{#notInAny}}
+			<svg class="svg-icon whenActive" viewBox="0 0 100 100"> <use xlink:href="#icon-not-in-any-project-blue"> </use> </svg>
+			<svg class="svg-icon whenInactive" viewBox="0 0 100 100"> <use xlink:href="#icon-not-in-any-project-gray"> </use> </svg>
+			{{/notInAny}}
+
+		</div>
+		
+		<ul class="uploadTabs-project">
+		{{#uploads}}
+		<li data-id='{{id}}' class="libraryWidget" title="Click or drag-and-drop to add" style="background-image: none;">
+			<div class="pageWidget" style="top:2px;left:2px;width:50px;height:50px;">
+				{{#imgData}}
+				<img width="50" height="50" data-id="{{id}}-thumb" src="{{imgData}}"/>
+				{{/imgData}}
+				{{^imgData}}
+				<canvas class="toLoad" width="50" height="50" data-id="{{id}}-thumb"></canvas>
+				{{/imgData}}
+				<div class="widgetTitle">{{title}}</div>
+			</div>
+		</li>
+		{{/uploads}}
+		</ul>
+	</li>
+</script>
+<script id="uploadMarkup" type="text/x-underscore">
+	<li data-id='{{id}}' class="libraryWidget" title="Click or drag-and-drop to add" style="background-image: none;">
+		<div class="pageWidget" style="top:2px;left:2px;width:50px;height:50px;">
+			{{#uploadThumbsCacheExists}}
+			<img width="50" height="50" data-id="{{id}}-thumb" src="{{src}}"/>
+			{{/uploadThumbsCacheExists}}
+			{{^uploadThumbsCacheExists}}
+			<canvas class="toLoad" width="50" height="50" data-id="{{id}}-thumb"></canvas>
+			{{/uploadThumbsCacheExists}}
+			<div class="widgetTitle">{{title}}</div>
+		</div>
+	</li>
+</script>
+<script id="widgetMarkup" type="text/x-underscore">
+	<li id="{{id}}" class="libraryWidget {{widgetClass}}" title="Click or drag-and-drop to add"><div class="widgetTitle">{{title}}</div></li>
+</script>
+
+<script id="upgradeDialogTmpl" type="text/x-underscore">
+
+    <div class="modalWindowHeader">
+        <span class="modalWindowHeaderText">
+        	Upgrade Account
+		</span>
+    </div>
+
+    <div class="modalWindowContent">
+
+		    <div id="upgrade-1" class="upgrade-panel upgrade-panel-visible">
+                <div class="upgrade-panel-inner">
+                <div id="paymentFrequencyToggle">
+                        <span class="sg-textLightGrey sg-column sg-toggleButtonText" data-name="year">Pay Annually</span>
+                        <div id="upgradeAccountTypeFrequency" class="sg-column sg-toggleButton">
+                            <div data-name="year" class="toYearly switchTo sg-toggleButtonPointer active sg-toggleLeft"></div>
+                        </div>
+                        <span class="sg-textLightGrey sg-column sg-toggleButtonText" data-name="month">Pay Monthly</span>
+                </div>
+					    <div id="productOfferList" class="sg-columnList">
+
+					        <div id="accountTypeColumnLeft" class="sg-column">
+
+						            <div class="sg-columnHeader sg-blue3 sg-bb-1" data-cost-month="12" data-cost-year="10">
+						                <div class="sg-centeredText sg-h1 sg-textWhite">Lite</div>
+						                <div class="accountTypeDetail sg-centeredText sg-mediumText sg-textWhite">
+						                	<span>
+						                		$<span class="value"></span>/Month 
+						                		<span class="annualSwitchIndicator">(Paid Annually)</span>
+						                	</span>
+						                </div>
+						            </div>
+
+						            <ul class="sg-accountOfferList sg-bb-1" data-projects-month="1" data-projects-year="3">
+						                <li>
+						                    <div class="sg-icon20px sg-listCaptionImage">
+						                        <svg class="sg-icon"  viewBox="0 0 100 100">
+						                            <use xlink:href="#icon-unlimited-projects-upgrade"/></svg>
+						                        
+						                        </svg>
+						                    </div>
+						                    <span class="sg-textGrey value"></span>
+						                </li>
+						                <li>
+						                    <div class="sg-icon20px sg-listCaptionImage">
+						                        <svg class="sg-icon" viewBox="0 0 100 100">
+						                            <use xlink:href="#icon-unlimited-pages-upgrade"/>
+						                            
+						                        </svg>
+						                    </div>
+						                    <span class="sg-textGrey">Unlimited Pages</span>
+						                </li>
+						                <li>
+						                    <div class="sg-icon20px sg-listCaptionImage">
+						                        <svg class="sg-icon" viewBox="0 0 100 100">
+						                            <use xlink:href="#icon-all-libraries-upgrade"/>
+						                            
+						                        </svg>
+						                    </div>
+						                    <span class="sg-textGrey">All Libraries</span>
+						                </li>
+						                <li>
+						                    <div class="sg-icon20px sg-listCaptionImage">
+						                        <svg class="sg-icon" viewBox="0 0 100 100">
+						                            <use xlink:href="#icon-unlimited-uploads-upgrade"/></svg>
+						                       
+						                        </svg>
+						                    </div>
+						                    <span class="sg-textGrey">10 Uploads</span>
+						                </li>
+						            </ul>
+
+						            <ul class="sg-accountOfferList sg-bb-1">
+						            	<li>
+						            		<br>
+						            		<br>
+						            	</li>
+
+						            	<li>
+						            		<br>
+						            	</li>
+
+						            	<li>
+						            		<br>
+						            	</li>
+						            </ul>
+
+					        </div>
+
+					        <div id="accountTypeColumnMiddle" class="sg-column">
+					            <div class="sg-columnHeader sg-blue2 sg-bb-1" data-cost-month="29" data-cost-year="24">
+					                <div class="sg-centeredText sg-h1 sg-textWhite">Standard</div>
+					                <div class="accountTypeDetail sg-centeredText sg-mediumText sg-textWhite">
+					                	<span>
+					                		$<span class="value"></span>/Month 
+					                		<span class="annualSwitchIndicator">(Paid Annually)</span>
+					                	</span>
+					                </div>
+					            </div>
+
+					            <ul class="sg-accountOfferList sg-bb-1" data-projects-month="10" data-projects-year="12">
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100"><use xlink:href="#icon-unlimited-projects-upgrade"/></svg>
+					                    </div>
+					                    <span class="sg-textGrey value"></span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100"><use xlink:href="#icon-unlimited-pages-upgrade"/></svg>
+					                    </div>
+					                    <span class="sg-textGrey">Unlimited Pages</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                        	<use xlink:href="#icon-all-libraries-upgrade"/>
+					                       	</svg>
+					                    </div>
+					                    <span class="sg-textGrey">All Libraries</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-unlimited-uploads-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Unlimited Uploads</span>
+					                </li>
+					            </ul>
+
+
+					            <ul class="sg-accountOfferList sg-bb-1">
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon sg-icon-margin-fix" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-send-project-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Project Cloning, Send to Another, Archiving</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-screenflow-diagram-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Exports (Screens, flow, html)</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-print-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Printing</span>
+					                </li>
+					            </ul>
+
+					        </div>
+
+
+					        <div id="accountTypeColumnRight" class="sg-column">
+					            <div class="sg-columnHeader sg-blue1 sg-bb-1" data-cost-month="49" data-cost-year="41">
+					                <div class="sg-centeredText sg-h1 sg-textWhite">Professional</div>
+					                <div class="accountTypeDetail sg-centeredText sg-mediumText sg-textWhite">
+					                	<span>
+					                		$<span class="value"></span>/Month
+					                		<span class="annualSwitchIndicator">(Paid Annually)</span>
+					                	</span>
+					                </div>
+					            </div>
+
+					            <ul class="sg-accountOfferList sg-bb-1" data-projects-month="Unlimited" data-projects-year="Unlimited">
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100"><use xlink:href="#icon-unlimited-projects-upgrade"/></svg>
+					                    </div>
+					                    <span class="sg-textGrey value"></span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100"><use xlink:href="#icon-unlimited-pages-upgrade"/></svg>
+					                    </div>
+					                    <span class="sg-textGrey">Unlimited Pages</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                        	<use xlink:href="#icon-all-libraries-upgrade"/>
+					                        </svg>			                          
+
+					                    </div>
+					                    <span class="sg-textGrey">All Libraries</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-unlimited-uploads-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Unlimited Uploads</span>
+					                </li>
+					            </ul>
+
+
+					            <ul class="sg-accountOfferList sg-bb-1">
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon sg-icon-margin-fix" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-send-project-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Project Cloning, Send to Another, Archiving</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-screenflow-diagram-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Exports (Screens, flow, html)</span>
+					                </li>
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-print-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Printing</span>
+					                </li>
+					            </ul>
+
+
+					            <ul class="sg-accountOfferList">
+					                <li>
+					                    <div class="sg-icon20px sg-listCaptionImage">
+					                        <svg class="sg-icon" viewBox="0 0 100 100">
+					                            <use xlink:href="#icon-save-to-library-upgrade"/>
+					                        </svg>
+					                    </div>
+					                    <span class="sg-textGrey">Save to Library</span>
+					                </li>
+					            </ul>
+					        </div>
+					    </div>
+					    
+					    <br clear="all">
+
+					    <div id="upgradeBtnArea">
+
+						    <button id="lite" class="accountType lite upgradeBtns sg-column sg-actionButton sg-blue3" data-label="Lite" data-name="lite_2" data-cost-month="12" data-cost-year="10">
+						    	<span class="sg-largeButtonText sg-textWhite">Choose this Plan</span>
+							</button>
+						    
+						    <button id="silver" class="accountType silver upgradeBtns sg-column sg-actionButton sg-blue2" data-label="Standard" data-name="silver" data-cost-month="29" data-cost-year="24">
+						    	<span class="sg-largeButtonText sg-textWhite">Choose this Plan</span>
+						    </button>
+
+						    <button id="gold" class="accountType gold upgradeBtns sg-column sg-actionButton sg-blue1" data-label="Professional" data-name="gold" data-cost-month="49" data-cost-year="41">
+						    	<span class="sg-largeButtonText sg-textWhite">Choose this Plan</span>
+						    </button>
+
+						    <br>
+					    </div>
+
+			    		
+					    <div class="sg-spacer-30">
+					        <span class="sg-textLeftAlign sg-textLightGrey sg-mediumText sg-readingText">
+					            All paid accounts also come with custom splash/loading screens, version history and restore, test on device, email support and more. Billing can be paused at any time and your projects will remain stored for up to one year. Receipts can be downloaded from the account settings, and set up to send by email once upgraded. 
+					        </span>
+					    </div>
+
+					    <br style="height:18px;">
+			    </div>
+			</div>
+
+    		<div id="upgrade-2" class="upgrade-panel upgrade-panel-hidden">
+    		    <div  class="upgrade-panel-inner">
+    		   
+    		    <div id="upgradeHeaderStep2">
+    		    	<span class="modalWindowHeaderText"> - Enter Card Details</span>
+    		    </div>
+
+	    		<form id="upgradeForm">
+	                <input type="hidden" id="t" name="t" value="upgrade">
+	                <input type="hidden" id="accountEmail" name="accountEmail" value="">
+	                <input type="hidden" id="accType" name="accType" value="">
+	                <input type="hidden" id="paymentFrequency" name="paymentFrequency" value="">
+	                <input type="hidden" id="originalType" value="">
+	                <input type="hidden" id="originalTypeLabel" value="">
+	                <input type="hidden" id="originalFrequency" value="">
+	                <input type="hidden" id="couponCode" name="couponCode" value="" />
+	                
+	                <div class="upgradeFormContainer sg-form">
+
+	                    <div>
+	                        <input type="text" class="sg-inputAreas" placeholder="Name on Card" id="name" name="name" maxlength="50">
+	                    </div>
+
+	                    <div class="form-input sg-spacer-15">
+	                        <input type="text" id="number" class="sg-inputAreas" placeholder="Card Number" name="number"/>
+	                        <input type="hidden" id="type" name="type" value="" />
+	                        <div class="form-icon icon-card visa"></div>
+	                        <div class="form-icon icon-card mc"></div>
+	                        <div class="form-icon icon-card amex"></div>
+	                    </div>
+
+	                    <div class="sg-spacer-15">
+	                        <div class="sg-column">
+	                            <select id="month" name="month" class="cardexpirefield sg-inputAreas">
+	                                <option selected disabled hidden value="">Month</option>
+	                                <option value="01">01</option>
+	                                <option value="02">02</option>
+	                                <option value="03">03</option>
+	                                <option value="04">04</option>
+	                                <option value="05">05</option>
+	                                <option value="06">06</option>
+	                                <option value="07">07</option>
+	                                <option value="08">08</option>
+	                                <option value="09">09</option>
+	                                <option value="10">10</option>
+	                                <option value="11">11</option>
+	                                <option value="12">12</option>
+	                            </select>
+	                        </div>
+
+	                        <div class="sg-column">
+	                            <select id="year" name="year" class="cardexpirefield sg-inputAreas"></select>
+	                        </div>
+
+	                        <div class="form-input sg-column">
+	                            <input class="sg-inputAreas" type="text" id="cvv" name="cvv" maxlength="4" placeholder="CVV">
+	                            <div class="form-icon icon-cvv"></div>
+	                            </input>
+	                        </div>
+
+	                    </div>
+
+	                    <br clear="all">
+	                    <!--
+	                    <div id="errorCardEntryPanel1" class="sg-errorMessage">
+	                        
+	                    </div>
+	                    -->
+
+	                    <div id="errorCardEntryPanel2" class="sg-errorMessage">
+	                        <label class="form-error-area" for="name"></label>
+	                        <label class="form-error-area" for="number"></label>
+	                        <label class="form-error-area" for="month"></label>
+	                        <label class="form-error-area" for="cvv"></label>
+	                        <label class="form-error-area" for="billingAddress"></label>
+	                        <label class="form-error-area" for="billingCompany"></label>
+	                        <label class="form-error-area" for="billingCountry"></label>
+	                        <label class="form-error-area" for="billingVAT"></label>
+	                    </div>
+
+	                    <div class="sg-spacer-15">              			                
+		                   	<div id="billingCountryArea" class="sg-column">
+			                   	<div>
+			                        <textarea id="billingAddress" class="sg-textboxAreas" placeholder="Billing Address" name="billingAddress" rows="4"></textarea>
+			                    </div>
+
+			                    <div class="sg-spacer-10">
+		                            <select class="sg-inputAreas" id="billingCountry" name="billingCountry">
+<option value="">Country</option>
+<option value="AF">Afghanistan</option>
+<option value="AX">Åland Islands</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua and Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia, Plurinational State of</option>
+<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+<option value="BA">Bosnia and Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CA">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+<option value="CC">Cocos (Keeling) Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo</option>
+<option value="CD">Congo, the Democratic Republic of the</option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="CI">Côte d'Ivoire</option>
+<option value="HR">Croatia</option>
+<option value="CU">Cuba</option>
+<option value="CW">Curaçao</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands (Malvinas)</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard Island and McDonald Islands</option>
+<option value="VA">Holy See (Vatican City State)</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IR">Iran, Islamic Republic of</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IM">Isle of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KP">Korea, Democratic People's Republic of</option>
+<option value="KR">Korea, Republic of</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Lao People's Democratic Republic</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macao</option>
+<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia, Federated States of</option>
+<option value="MD">Moldova, Republic of</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="NC">New Caledonia</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territory, Occupied</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PN">Pitcairn</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="RE">Réunion</option>
+<option value="RO">Romania</option>
+<option value="RU">Russian Federation</option>
+<option value="RW">Rwanda</option>
+<option value="BL">Saint Barthélemy</option>
+<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+<option value="KN">Saint Kitts and Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin (French part)</option>
+<option value="PM">Saint Pierre and Miquelon</option>
+<option value="VC">Saint Vincent and the Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome and Principe</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SX">Sint Maarten (Dutch part)</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia and the South Sandwich Islands</option>
+<option value="SS">South Sudan</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SD">Sudan</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard and Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="SY">Syrian Arab Republic</option>
+<option value="TW">Taiwan, Province of China</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania, United Republic of</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad and Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="US">United States</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VE">Venezuela, Bolivarian Republic of</option>
+<option value="VN">Viet Nam</option>
+<option value="VG">Virgin Islands, British</option>
+<option value="VI">Virgin Islands, U.S.</option>
+<option value="WF">Wallis and Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+
+		                        </div>
+	                        </div>
+
+	                        <div id="billingVAToptions" class="sg-column">
+			                    <div>
+			                        <input type="text" class="sg-inputAreas" id="billingCompany" placeholder="Company Name (Optional)" name="billingCompany" maxlength="50">
+			                    </div>
+
+			                   	<div id="billingVATSection" class="sg-spacer-10">
+		                            <input type="text" class="sg-inputAreas" id="billingVAT" placeholder="VAT Number (Optional)" name="billingVAT" maxlength="50">
+		                        </div>
+	                        </div>
+	                    </div>
+
+	                   	<button id="confirmPaymentButton" class="sg-actionButton sg-blue1 sg-spacer-15">
+	                   		<span class="sg-largeButtonText sg-textWhite">Proceed to Confirmation</span>
+	                   		<span class="feedbackMessage sg-largeButtonText sg-textWhite"></span>
+	                	</button>
+
+	                	<div id="billingCountryAreaNote" class="form-note sg-readingText sg-spacer-10"></div>
+	                
+	                </div>
+
+	            </form>
+	            </div>
+
+    		</div>
+
+    		<div id="upgrade-3" class="upgrade-panel upgrade-panel-hidden">
+    				<div id="upgradeHeaderStep3">
+    		    	<span class="modalWindowHeaderText"> - Final Confirmation</span>
+    		    </div>
+    			<!--<input id="ac-3" name="accordion-1" type="radio">-->
+
+		        <div id="upgradeFinalStep" class="upgrade-panel-inner">
+		            <div class="confirmBox" id="confirmBoxForm">
+		                <label id="labelConfirmation" for="confirmation">
+		                    <input id="confirmation" type="checkbox" name="confirmation" class="sg-column">
+		                    <span id="confirmText" class="confirmText sg-smallText"></span>
+		                </label>
+		                <span class="clear"></span>
+		            </div>
+
+		           	<div class="sg-errorMessage">
+	                    <span id="upgradeSubmitError" class="hidden">Please confirm by clicking on the checkbox before proceeding.</span>
+	                </div>
+	            
+		            <button id="submitButton" disabled class="sg-actionButton sg-blue1">
+		                <span class="sg-largeButtonText sg-textWhite">Confirm</span>
+		            </button>
+		        </div>
+    		</div>
+
+    		<div id="upgrade-4" class="upgrade-panel upgrade-panel-hidden">
+
+		        <div id="upgradePanelFinal" class="upgrade-panel-inner">
+		            <div>
+                        <span class="sg-textGrey sg-h3 sg-readingText">
+                            Success!
+                        </span>
+                    </div>
+
+                    <div class="sg-spacer-15">
+                    	<span class="sg-textGrey sg-mediumText sg-readingText">
+                            Your account is now upgraded. 
+                        </span>
+                    </div>
+
+		            <button id="upgradeFinishedBtn" class="sg-actionButton sg-blue1 sg-spacer-30">
+		                <span class="sg-largeButtonText sg-textWhite">Get Back to Prototyping</span>
+		            </button>
+
+		            <div id="upgradeExplanationArea" class="sg-spacer-30">
+		            	<span class="sg-textGrey sg-mediumText sg-readingText">
+		            		While you are here - two other useful tips:
+		            	</span>
+
+		            	<div class="sg-columnList sg-spacer-15">
+		            		<div id="upgradeExplanationColumnL" class="sg-column sg-br-grey">
+		            			<div>
+		            				<div class="sg-circleHighlight sg-column">1</div>
+		            				<span class="sg-h3 sg-textGrey sg-column">Receipts</span>
+		            			</div>
+		            			<br>
+		            			<div class="sg-spacer-15">
+			            			<span class="sg-textLightGrey sg-mediumText sg-readingText">
+			            				You can download your receipts or set them up to send automatically in the 'receipts' section of your account settings.
+			            			</span>
+		            			</div>
+		            		</div>
+
+		            		<div id="upgradeExplanationColumnR" class="sg-column upgradeExplanationColumn">
+		            			<div>
+		            				<div class="sg-circleHighlight sg-column">2</div>
+		            				<span class="sg-h3 sg-textGrey sg-column">Support</span>
+		            			</div>
+		            			<br>
+		            			<div class="sg-spacer-15">
+			            			<span class="sg-textLightGrey sg-mediumText sg-readingText">
+			            				We are interested in hearing your feedback - let us know how you are getting on at <a href="mailto:support@fluidui.com" class="sg-linkText">support@fluidui.com</a>
+			            			</span>
+		            			</div>
+		            		</div>
+		            	</div>
+		            </div>
+		        </div>
+    		</div>
+
+
+    		<div id= "upgrade-navigation-wrapper" class="sg-spacer-30 sg-columnList">
+
+    			<div id="upgradeFormNavigation">
+	    			<button id="label-ac-1" class="sg-upgradeSteps sg-column sg-upgradeSteps-selected">
+	    				<span class="sg-upgradeStepsText">1</span>
+	    			</button>
+			        <div class="sg-column sg-upgradeArrow">&#10142;</div>
+
+			        <button id="label-ac-2" class="sg-upgradeSteps sg-column">
+			        	<span class="sg-upgradeStepsText">2</span>
+			        </button>
+			        <div class="sg-column sg-upgradeArrow">&#10142;</div>
+	    			
+			        <button id="label-ac-3" class="sg-upgradeSteps sg-column">
+			        	<span class="sg-upgradeStepsText">3</span>
+			        </button>
+		        </div>
+
+    		</div>
+
+    </div>
+</script>
+
+<script id="tipTemplate" type="text/x-underscore">
+	<section class="tip">
+		<div class="tipBg"></div>
+		<div class="tipFg"></div>
+		<div class="container">
+			<span class="sg-smallText sg-textWhite">
+			Pay Annually - Save 17% and get two extra projects on lite and standard accounts
+			</span>
+		</div>
+	</section>
+</script>
+
+<script id="upgradeErrorTmpl" type="text/x-underscore">
+                <div class="modalWindowHeader">
+                    <div class="modalWindowHeaderFluidSymbol" ></div>
+                    <div class="modalWindowHeaderText">
+                        Give us your Feedback<br/>
+                    </div>
+                    <div class="userSettingsLogoFluid" title="Fluid UI logo" alt="Fluid UI logo"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="modalWindowContent">
+                    <form id="errorContact"  >
+                        <input type="hidden" name="t" value="contact">
+                        <div id="upgradeContactTop">
+                            <div id="upgradeWarning" class="userSettingsErrorMsg">
+                                <div class="userSettingsMessage messageWarning">
+                                    <span id="upgradeErrorText"></span> or <a id="tryAgain">Try Again</a>.
+                                </div>
+                            </div>
+                            <div class="userSettingsControlsGroup">
+                                <div class="userSettingsControlsInput-100">
+                                    <textarea id="content" name="content" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="userSettingsContactBottom" class="top-15">
+                            <input type="submit" class="userSettingsButton buttonGreen textWhite top-10 buttonSubmit" value="Send" />
+                        </div>
+                    </form>
+                </div>
+</script>
+
+<script id="validationErrorTemplate" type="text/x-underscore">
+<div class="validationError">
+{{message}}
+</div>
+</script>
+
+<script src="js/concat-jspreview1.e1884579e8ad1b5a0f04bbb324880b4d.compact.js"></script>
+
+<script>
+    var g_preview = 'p_LFHcg4xhoMRhkBTx8IC3f13aDXgIQK4P';
+    if(window.location.hash)
+    {
+        var url = window.location.href;
+        var hash = window.location.hash;
+        var index_of_hash = url.indexOf(hash) || url.length;
+        var hashless_url = url.substr(0, index_of_hash);
+        window.location = hashless_url;
+    }
+
+    var g_preview = 'p_LFHcg4xhoMRhkBTx8IC3f13aDXgIQK4P';
+    var g_previewMode = true;
+    var g_homepage = null;
+    var g_window_print = null;
+    var g_embedded = false;
+</script>
+
+<script src="js/indexedDB.shim.fa50e091a7a8e7fb181c0cce1d223447.compact.js"></script>
+<!-- <script src="js/class-project.4a8aece423805be04fa241dc18f71848.compact.js"></script> -->
+<!-- <script src="js/class-storage.863bb52f0227480d871ba643220c2754.compact.js"></script> -->
+<!-- <script src="js/class-ajax.e434f15de904d3d8b943320c97f600c6.compact.js"></script> -->
+<!-- <script src="js/class-widget.e835318af75cf5206bb1192635501b8e.compact.js"></script> -->
+<!-- <script src="js/class-staticWidgets.0c7df18419fc5618c9e9254ed68f336d.compact.js"></script> -->
+<!-- <script src="js/class-widgetNewSegments.7a320e9952e8048e43179bc5adbca42b.compact.js"></script> -->
+<!-- <script src="js/class-widgetNewDraw.8462c27db96959b2b29b6614000070da.compact.js"></script> -->
+
+<!-- <script src="js/class-dbStorage.60c910306f8e3a26e5f6e87af09fa0b5.compact.js"></script> -->
+<!-- <script src="js/class-wdgRenderer.fab1dd2f7ee1e2723c808a59f1ebc7b0.compact.js"></script> -->
+<!-- <script src="js/class-page.59015c10f0699a54008f35223fe73bda.compact.js"></script> -->
+<!-- <script src="js/class-preview.20d8946153a163265eda68f909fe1ca0.compact.js"></script> -->
+
+<!-- <script src="js/class-event.f6b99c2fb4cdc0cfd2258d806888b922.compact.js"></script> -->
+<!-- <script src="js/utils.d632b58f165b3f4306190a2c59b5c637.compact.js"></script> -->
+
+<!-- browserify output -->
+<!-- <script src="js/fluid/fluid.bundle.24394907d4ecd5349cea28f4348287cc.compact.js"></script> -->
+
+<!-- <script src="js/fluid/models/account.b333842f662196af747d1aaba80e4350.compact.js"></script>
+<script src="js/fluid/models/upload.4b8f2fed3c94cc878c7cfb8d271a9a92.compact.js"></script>
+<script src="js/fluid/models/project.0634dc33d5bfc8c0d01b9c7c1b0ee753.compact.js"></script>
+<script src="js/fluid/models/page.b40b424e70fd6d7791f0fa49792c3b3c.compact.js"></script>
+<script src="js/fluid/models/widget.6ac5261edb90a2eb6374d06efa63786a.compact.js"></script>
+<script src="js/fluid/models/link.7cb2218c9747b4e9e5c46f2acba3b690.compact.js"></script> -->
+<!-- <script src="js/fluid/models/widgetGroup.16f4228afde8e8b338d050da63c9abd6.compact.js"></script> -->
+<!-- <script src="js/fluid/models/customWidgets.febe5975527d6c32fc820dfc8f9edc9c.compact.js"></script> -->
+
+<!-- <script src="js/fluid/plugins/fluid.muscula.c5bd3ef6adbbe0d9f1fa61251af14aa8.compact.js"></script>
+<script src="js/fluid/modules/upload.1427c63ece09df581b35943ebaa2fa83.compact.js"></script>
+ -->
+
+
+<!-- <script src="js/class-scrollview.2c76b0756d61298a20a8f4c2c842b3f5.compact.js"></script> -->
+<!-- <script src="js/StackBlur.716ac647283eb35d50018991506408d3.compact.js"></script> -->
+
+
+<script src="js/concat-jspreview2.144c198cd07d214859cc639a31b78da9.compact.js"></script>
+
+</head>
+
+
+
+
+<body class="loading">
+
+
+
+
+    <div id="font-preloader" style="position: relative;">
+        <span style="font-family: Droid Sans; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+        <span style="font-family: Roboto; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+        <span style="font-family: Kaushan Script; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+        <span style="font-family: Quicksand; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+        <span style="font-family: Walkway; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+        <span style="font-family: Journal; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+        <span style="font-family: Permanent Marker; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+        <span style="font-family: Raster Gothic; position: absolute; top: -9000px; left: -9000px;">aaa</span>
+    </div>
+	
+<!--	<div style="width: 2px; height: 800px; background: red; position: absolute;"></div>-->
+    <div id="home" data-role="page" data-transition="none">
+        <div id="homePage" data-role="content" class="pageList"></div>
+    </div>
+    <div id="blankPage" data-role="page" data-transition="none" style="display:none; z-index: 999;">
+        <div data-role="content" class="pageList" style="overflow: hidden; width: 100%; text-align: center;">
+            <div class="blankPageContainer">
+                <div class="blankPageText">Empty page</div>
+                <div class="pageWidget widgetLink blankPageBackButton" >Go back</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
